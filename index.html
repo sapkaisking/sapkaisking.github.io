@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+  <title>DiscordWebhookSpammer</title>
+</head>
+<body>
+  <h1 class="glow">Sapkas Webhook Spammer</h1>
+  <div id="controls">
+    <div class="inputs">
+      <input id="url" class="glow-input" placeholder="*Webhook URL:" required>
+      <input id="username" class="glow-input" placeholder="Webhook Username:">
+      <input id="message" class="glow-input" placeholder="*Message:" required>
+      <input id="avatar" class="glow-input" placeholder="Avatar URL:">
+    </div>
+    <div class="buttons">
+      <button id="start" class="glow-button">Start</button>
+      <button id="stop" class="glow-button" disabled>Stop</button>
+    </div>
+  </div>
+  <a href="#del" id="delLink" class="glow-link">Delete Webhook</a>
+  <div id="delModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="delClose">&times;</span>
+      <h2 class="glow">Delete Webhook</h2>
+      <div id="delControls">
+        <input id="delUrl" class="glow-input" placeholder="*Webhook URL:" required>
+        <button id="delete" class="glow-button">Delete</button>
+      </div>
+    </div>
+  </div>
+  <a href="#about" id="aboutLink" class="glow-link">About</a>
+  <div id="aboutModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="aboutClose">&times;</span>
+      <h2 class="glow">About Sapkas Webhook Spammer</h2>
+      <p>
+        This is a Discord webhook spamming tool created by Sapka that allows you to spam a Discord webhook. Learn More <a href="https://landen419.com" class="glow-link">Here</a>.
+      </p>
+      <p>
+        To use this tool, enter all required info in the input boxes (Webhook URL and message are required) and click "Start" to spam the webhook. Press "Stop" to stop spamming. For help or to report bugs, please
+        contact me on my <a href="https://discord.gg/" class="glow-link">Discord server</a>.
+      </p>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/modals.js"></script>
+</body>
+</html>
